@@ -4,3 +4,50 @@ fun main() {
     println("Welcome to Mobile Computing")
     println("I am learning Kotlin")
 }
+
+// Exercise 2
+
+fun main() {
+    val name = "Danny"
+    val studentID = 2206585
+    val courseName = "Computer Science"
+    val height = 178
+    val fullTime = true
+    
+    println("My name is $name")
+    println("Student ID: $studentID")
+    println("Course: $courseName")
+    println("Height: $height cm")
+    println("Full-time student: $fullTime")
+}
+
+// Exercise 3
+
+fun main() {
+    
+    println("Enter your name: ")
+    val name = readln()
+    
+    println("Enter your age: ")
+    val age = readln().toInt()
+    
+    println("Hello $name")
+    println("You are $age years old")
+}
+
+// Exercise 4
+
+fun main() {
+    
+    val mark = 75
+    
+    if (mark >= 70)
+    	println("Distinction")
+    else if (mark >= 60)
+    	println("Merit")
+    else if (mark >= 40)
+    	println("Pass")
+    else
+    	println("Fail")
+}
+
