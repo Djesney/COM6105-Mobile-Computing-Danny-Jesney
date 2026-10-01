@@ -51,3 +51,79 @@ fun main() {
     	println("Fail")
 }
 
+// Exercise 5
+
+fun main() {
+     
+    val choice = 1
+    val num1 = 20
+    val num2 = 4
+    
+    when (choice) {
+        1 -> println("Result: ${num1 + num2}")
+        2 -> println("Result: ${num1 - num2}")
+        3 -> println("Result: ${num1 * num2}")
+        4 -> println("Result: ${num1 / num2}")
+        else -> println("Invalid choice")
+    }
+    
+}
+
+// Exercise 6
+
+fun main() {
+     
+    for(i in 1..20) {
+        println(i)
+    }
+    
+}
+
+fun main() {
+     
+    for(i in 2..20 step 2) {
+        println(i)
+    }
+    
+}
+
+fun main() {
+     
+    var sum = 0
+    
+    for(i in 1..100) {
+        sum += i
+    }
+    
+    println("Sum :$sum")
+}
+
+// Exercise 7
+
+fun add(a: Int, b: Int): Int {
+    return a + b
+}
+
+fun largest(a: Int, b: Int): Int {
+    return if (a > b) a else b
+}
+
+fun rectangleArea(length: Double, width: Double): Double {
+    return length * width
+}
+
+fun celsiusToFahrenheit(celsius: Double): Double {
+    return (celsius * 9/5) + 32
+}
+
+fun main() {
+    
+    println("Add: ${add(10, 20)}")
+    
+    println("Largest: ${largest(15, 25)}")
+    
+    println("Rectangle area: ${rectangleArea(10.0, 5.0)}")
+    
+    println("Fahrenheit: ${celsiusToFahrenheit(20.0)}")
+    
+}
