@@ -127,3 +127,53 @@ fun main() {
     println("Fahrenheit: ${celsiusToFahrenheit(20.0)}")
     
 }
+
+// Exercise 8
+
+fun main() {
+    
+    val modules = arrayOf(
+    	"Mobile Computing",
+        "Applied Artificial Intelligence",
+        "Data Science",
+        "Software Engineering",
+        "Computer Networks"
+    )
+    
+    for (i in modules.indices) {
+        println("Module ${i + 1}: ${modules[i]}")
+    }
+    
+}
+
+// Exercise 9
+
+fun main() {
+    
+    val apps = mutableListOf(
+        "Snapchat",
+        "Spotify",
+        "Instagram"
+    )
+        
+    apps.add("Youtube")
+    apps.add("WhatsAapp")
+    
+    println(apps)
+    
+}
+
+// Exercise 10
+
+fun Int.isOdd(): Boolean = this % 2 != 0
+
+fun String.initial(): String = this.first().toString()
+
+fun main() {
+    
+    println(7.isOdd())
+    
+    println("Antesar".initial())
+    
+}
+
