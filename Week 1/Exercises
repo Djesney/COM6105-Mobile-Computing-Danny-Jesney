@@ -177,3 +177,22 @@ fun main() {
     
 }
 
+// Exercise 11
+
+fun main() {
+    
+    var name: String? = null
+    
+    println("Length: ${name?.length}")
+    
+    val length = name?.length ?:0
+    println("Length with default: $length")
+    
+    name = "Antesar"
+    
+    println("Length: ${name?.length}")
+    
+    val newLength = name?.length ?:0
+    println("Length with default: $newLength")
+    
+}
